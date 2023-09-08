@@ -1,8 +1,8 @@
 node_modules
 dist
 .next
-/16-album-k/
+/16-album-k/*
 /16-album-k - copy (2)/
-/16-album-k copy-1/
+/16-album-k - copy-1/
 nose.html
 sitioCagao.html
