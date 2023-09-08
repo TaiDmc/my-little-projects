@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: thistle;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 992px;
+}
+
+/* fhakjshk */
+
+.add {
+  background-color: white;
+  /* width: 50vw;
+  height: 50vh; */
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  min-height: 50vh;
+  min-width: 50vw;
+}
+
+.add input {
+  padding: 2.3rem;
+  background-color: rgba(128, 128, 128, 0.473);
+  border-radius: 2rem;
+  font-size: inherit;
+  min-width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add input::placeholder {
+  text-align: center;
+  color: #00000095;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.add input[type="submit"] {
+  font-size: 1rem;
+  padding: 1.5rem;
+  background-color: gray;
+  min-width: 3rem;
+}
+
+.add input:focus {
+  border: medium solid black;
+}
+
+/* 
+tags
+
+with class "container-target"
+*/
+
+.container-target {
+  border: thick solid black;
+  border-radius: 1rem;
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 0.5rem;
+}
+
+.to-do img {
+  width: 3rem;
+  height: auto;
+  padding: 0 0.5rem;
+}

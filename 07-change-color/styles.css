@@ -1,0 +1,32 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.df {
+  background-color: aqua;
+  transition: all 0.2s ease-in-out;
+}
+
+.pink {
+  background-color: pink;
+  transition: all 0.2s ease-in-out;
+}

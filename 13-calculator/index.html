@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <main class="container">
+      <div id="calculator" class="calculator">
+        <form id="calculator-form" name="calculator-form">
+          <input
+            type="textfield"
+            name="ans"
+            autocomplete="off"
+            readonly
+            id="ans"
+            value=""
+          />
+          <br />
+          <input type="button" value="7" />
+          <input type="button" value="8" />
+          <input type="button" value="9" />
+          <input type="button" value="+" class="orange" />
+          <br />
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input type="button" value="-" class="orange" />
+          <br />
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+          <input type="button" value="*" class="orange" />
+          <br />
+          <input type="button" value="0" class="gray" />
+          <input type="button" value="C" class="gray" />
+          <input type="button" value="=" class="orange" />
+          <input type="button" value="/" class="orange" />
+        </form>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

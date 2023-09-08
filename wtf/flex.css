@@ -1,0 +1,29 @@
+.container {
+  border: 2px solid #f7df1e;
+  display: flex;
+  background-color: #222;
+  flex-direction: row-reverse;
+}
+.item {
+  border: 1px solid #f7df1e;
+  margin: 10px;
+  color: #f7df1e;
+  text-align: center;
+}
+
+body {
+  background-color: #222;
+}
+
+.container2 {
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.item2 {
+  color: white;
+  margin: 5px;
+  border: 2px solid white;
+}

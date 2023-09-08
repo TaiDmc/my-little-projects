@@ -1,0 +1,176 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 300px) 1fr;
+  grid-template-areas: "td-form td-form td-cards";
+}
+
+/* Form */
+.add-form {
+  background-color: antiquewhite;
+  border-radius: 0.8rem;
+  border: medium solid black;
+  font-weight: bold;
+  font-size: large;
+  padding: 1rem;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.add-form:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.todo-form {
+  grid-area: td-form;
+  width: 100%;
+  padding: 2rem;
+}
+
+.todo-form form {
+  margin: 1rem;
+  padding: 3rem;
+  border: thick black solid;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: rgb(83, 75, 83);
+}
+
+.thing {
+  width: 100%;
+  height: 4rem;
+  margin: auto;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+}
+
+.thing:focus {
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.buttons * {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease-in;
+}
+
+.buttons *:hover {
+  cursor: pointer;
+  filter: brightness(0.6);
+}
+
+/* Cards */
+.todo-cards {
+  grid-area: td-cards;
+  width: 100%;
+  padding: 3rem;
+}
+
+.todo-cards h2 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: thick black solid;
+  border-radius: 0.8rem;
+  background-color: thistle;
+  margin: 1rem auto;
+  padding: 3rem;
+  width: 80%;
+}
+
+.card h3 {
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.num {
+  background-color: rgba(240, 248, 255, 0.705);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 100;
+}
+
+.check {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.7rem;
+  border: 5px solid rgb(167, 77, 167);
+}
+
+.check:checked {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.multiple-btn {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(156, 154, 154, 0.6);
+  /* width: 2rem; */
+  /* height: 2rem; */
+
+  border: none;
+  border-radius: 0.5rem;
+  rotate: 90deg;
+  transition: all 0.3s ease-in-out;
+}
+
+.multiple-btn:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.modal-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  min-width: 5rem;
+  height: 7rem;
+  margin: 0.5rem;
+  background-color: rgb(172, 155, 155);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.modal-btn button {
+  padding: 0.3rem 1rem;
+  background-color: #ccc;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease-in;
+}
+
+.modal-btn button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

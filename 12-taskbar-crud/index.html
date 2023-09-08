@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskbar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Todolist with Json Server</h1>
+    <main class="container main">
+      <section class="todo-form" id="todo-form">
+        <h2>Add thing</h2>
+        <button id="add-form" class="add-form">Add something!</button>
+        <div class="form-div"></div>
+      </section>
+      <section class="todo-cards" id="todo-cards">
+        <h2>Todo</h2>
+      </section>
+    </main>
+    <template id="form-template">
+      <form action="">
+        <input
+        type="text"
+        name="thing"
+        placeholder="What are you doing?"
+        class="thing"
+        />
+        <input type="hidden" name="id" />
+        <div class="buttons">
+          <button id="cancel">Cancel</button>
+          <input type="submit" value="Save" />
+        </form>
+      </div>
+    </template>
+    <template id="card-template">
+      <div class="card">
+        <span class="num"></span>
+        <h3 class="thing"></h3>
+        <input type="checkbox" class="check" />
+        <button class="multiple-btn">...</button>
+      </div>
+    </template>
+    <script src="index.js"></script>
+  </body>
+</html>

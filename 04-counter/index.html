@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      margin: 0 auto;
+    }
+
+    .main {
+      flex-grow: 1;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: lightblue;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      border: medium solid lightslategray;
+    }
+
+    .container button {
+      padding: .5rem;
+      background-color: gray;
+      color: black;
+      border-radius: .5rem;
+    }
+
+    .footer {
+      background-color: thistle;
+      min-width: 100%;
+      padding: 1rem;
+    }
+
+    .d {
+      color: red;
+      transition: all .2s ease-in-out;
+    }
+
+    .i {
+      color: green;
+
+      transition: all .2s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="main">
+    <div class="container">
+      <h1>Counter</h1>
+      <h2 id="number">0</h2>
+      <button id="decrease">Decrease</button>
+      <button id="reset">Reset</button>
+      <button id="increase">Increase</button>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Soy tu amigo y estudiante digital... Carlos CaBi</p>
+  </footer>
+  <script>
+    const d = document,
+      $dBtn = d.getElementById("decrease"),
+      $rBtn = d.getElementById("reset"),
+      $iBtn = d.getElementById("increase"),
+      $number = d.getElementById("number");
+
+    d.addEventListener("click", (e) => {
+      if (e.target === $dBtn) {
+        // console.log("hola")
+        $number.textContent = $number.textContent - 1
+        if ($number.textContent < "1") {
+
+          $number.classList.add("d");
+
+        } else {
+          $number.classList.remove("d");
+
+
+        }
+
+      }
+      if (e.target === $rBtn) {
+        $number.textContent = "0"
+
+      }
+      if (e.target === $iBtn) {
+        // console.log("hola")
+        let value = $number.textContent
+        $number.textContent = Number(value) + 1
+        if ($number.textContent > "1") {
+
+          $number.classList.add("i");
+        } else {
+          $number.classList.remove("i");
+
+        }
+
+      }
+    })
+
+  </script>
+</body>
+
+</html>

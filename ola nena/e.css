@@ -1,0 +1,108 @@
+.titulo {
+ background-color: black;
+ color: white;
+ text-align: center;
+ font-size: 25px;
+ padding: 20px;
+ font-style: inherit;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuadro{
+color: white;
+font-family: 'Courier New', Courier, monospace;
+font-size: smaller;
+
+}
+
+.que{
+background-color: black;
+
+}
+
+.bonito{
+font-family: 'Courier New', Courier, monospace;
+text-align: right;
+font-size: smaller;
+}
+
+.chi{
+background: linear-gradient(90deg, black, black,  rgb(26, 3, 63));
+border-radius: 10px;
+}
+
+.tituloa{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    padding: 10px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tai{
+width: 300px;
+height: 300px;
+position:relative;
+left: 150px;
+    
+}
+
+.a{
+z-index: 1;    
+position: relative;
+bottom: 50px;
+display: block;
+background-color: black;
+border-radius: 10px;
+
+}
+
+
+
+.so{
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+color: white;
+font-size: smaller;
+background: linear-gradient(180deg, black, black, black,black,  white);
+padding: 30px;
+}
+
+.guia{
+background: linear-gradient(200deg, black, black, pink);
+font-family: 'Courier New', Courier, monospace;
+color: white;
+padding: 10px;
+text-align: center;
+font-size: smaller;   
+margin: 30px;
+}
+
+.ss{
+font-family: 'Courier New', Courier, monospace;
+color: white;
+font-size: small;
+background: linear-gradient(180deg, black, black, pink);
+}
+
+img{
+width: 100px;
+height: 100px;
+margin: 0 50px 50px 0;
+border-radius: 10px;
+filter: blur(1px);
+filter: brightness(50%);
+border: solid rgb(165, 161, 161);
+}
+
+p {
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+color: white
+}
+
+body{
+background-color: rgb(19, 17, 17);    
+}

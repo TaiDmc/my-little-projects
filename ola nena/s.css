@@ -1,0 +1,24 @@
+.home{
+color: white;
+background-color: black;
+font-family: 'Courier New', Courier, monospace;
+padding: 10px;
+border-radius: 10px;
+filter: blur(1px);
+}
+
+
+.hola{
+    color: white;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+body{
+background-color: rgb(29, 26, 26);
+}

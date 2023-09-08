@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskbar basic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Taskbar basic</h1>
+    <main class="container bg-thistle">
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-item"
+          placeholder="Tarea por hacer"
+          autocomplete="off"
+          required
+        />
+        <input type="submit" value="Enviar Tarea" />
+      </form>
+      <ul id="todo-list"></ul>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

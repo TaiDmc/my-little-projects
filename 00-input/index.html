@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type and watch!</title>
+    <style>
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+
+      *,
+      *:after,
+      *:before {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: thistle;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 992px;
+      }
+      /* 
+      .btn {
+        font-weight: bold;
+        background-color: gray;
+        border: medium solid black;
+        padding: 1.2rem;
+        text-align: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Escribe y mira</h1>
+      <h2>Mini proyecto dx</h2>
+      <form id="form">
+        <input type="text" name="text" placeholder="Text" required />
+        <br />
+        <input type="submit" value="Submit" name="submit" class="btn" />
+        <button type="button" id="clear">Limpiar Todo</button>
+      </form>
+      <div id="new-content"></div>
+    </main>
+    <script>
+      const d = document,
+        $form = d.getElementById("form"),
+        $btnClear = d.getElementById("clear"),
+        $new = d.getElementById("new-content");
+      console.log($form.submit);
+
+      d.addEventListener("submit", (e) => {
+        if (e.target === $form) {
+          e.preventDefault();
+          let $p = d.createElement("p");
+          $p.innerHTML = `
+            <b>
+              ${$form.text.value}
+            </b>
+          `;
+          $new.appendChild($p);
+          $form.text.value = "";
+        }
+      });
+
+      d.addEventListener("click", (e) => {
+        if (e.target === $btnClear) {
+          // $new.outerHTML = `<div id="new-content"> </div>`;
+          let yes = $new.querySelectorAll("p");
+          yes.forEach((el) => {
+            console.log(el);
+            el.outerHTML = "";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

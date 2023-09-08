@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: #71767b;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: thin gray solid;
+}
+
+.container {
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+  max-width: 70%;
+}
+
+.card {
+  margin: 1rem auto;
+  background-color: #1d1e1e;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  opacity: 0.9;
+}
+
+/* Header */
+.header-card {
+  max-height: 30%;
+}
+
+.profile {
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+}
+
+.user-profile * {
+  margin: 0;
+}
+
+.user-profile a {
+  color: gray;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.user-profile a:hover {
+  opacity: 0.7;
+}
+
+.user-profile p {
+  opacity: 0.8;
+}
+
+.user-profile img {
+  max-width: 4.5rem;
+  margin: 0;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.user-follow-btn {
+  background-color: #008abe;
+  padding: 0.4rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+  width: 140%;
+  transition: all 0.4s ease-out;
+}
+
+.user-follow-btn:hover {
+  opacity: 0.8;
+}
+
+/* Post */
+.post-card {
+  font-size: 10px;
+}
+
+.img-card-post {
+  font-weight: 100;
+}
+
+.img-card-post img {
+  width: 100%;
+  border-radius: 0.1rem;
+  transition: all 0.2s ease-in;
+}
+
+.img-card-post img:hover {
+  opacity: 0.7;
+}
